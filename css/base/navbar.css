@@ -1,0 +1,26 @@
+
+.navbar{
+    height: 56px;
+    display: flex;
+    width: 100%;
+   }
+.navbar__form--tool{
+     height: 56px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     justify-items: center;
+   }
+   .navbar__icon{
+    height: 56px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+h2
+{
+  margin-left: 12px;
+}

@@ -1,0 +1,124 @@
+.table{
+    width: calc(100vw- 24px -200px );
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 0px 24px 0px 24px;
+    /* border: 1px solid */
+}
+.table .feature{
+    background-color: #ffffff;
+}
+#table{
+    /* line-height: 48px; */
+    opacity: 100%;
+    width: 100%;
+    max-height: 48px;
+    /* height: calc(100vh - 56px); */
+    /* border: 1px solid #E0E0E0; */
+    border-collapse: collapse;
+    overflow-y: scroll;
+}
+
+#table thead{
+   background-color: #F5F5F5;
+}
+
+
+thead tr,th:first-child{
+    width: 50px;
+}
+tr.selected {
+    background-color: #ccc; /* Đổi màu để chỉ ra các dòng đã được chọn */
+  }
+
+#table tr,th,td{
+    text-align: center;
+    outline: none;
+    /* line-height: 48px; */
+    /* height: 48px; */
+    font-size: 14px;
+    width: auto;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+
+   
+}
+
+tbody tr:hover{
+    background-color: #F8F8F8;
+}
+
+tbody tr:active{
+    background-color: rgba(80,184,60,0.1);
+}
+
+/* tbody td:not(:first-child){
+   width: 17%;
+} */
+tfoot{
+    border-top:none ;
+    position: sticky;
+    inset-block-end: 0;
+    bottom: 0;
+}
+thead{
+    position: sticky;
+    inset-block-start: 0;
+    top: 0;
+}
+.footer{
+    height: 56px;
+    /* position: fixed; */
+    /* bottom: -1px; */
+    /* width: calc( 100% - 176px); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 24px 0px 24px;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+
+}
+
+.paging{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    align-items: center;
+}
+.paging div{
+    display: flex;
+    align-items: center;
+
+}
+.paging select{
+    height: 36px;
+    width: 46px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+.total-record{
+    margin-left: 16px;
+}
+footer div,span{
+  font-weight: 700;
+}
+/* #previous,#next{
+   font-size: 14px;
+}
+#next{
+    margin-right: 16px;
+} */
+table tr td:nth-child(2){
+    width: 120px;
+}
+table tr td:nth-child(3){
+    width: 200px;
+}
+table tr td:nth-child(4){
+    width: 100px;
+}
+table tr td:nth-child(5){
+    width: 200px;
+}

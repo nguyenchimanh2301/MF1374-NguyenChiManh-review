@@ -1,0 +1,84 @@
+.input--search input {
+    width: 280px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+    padding:0 10px 0 36px;
+  }
+  #input--search {
+    width: 148px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+    padding:0 10px 0 36px;
+  }
+  .input--search input::placeholder {
+    color: #999999;
+    font-size: 14px;
+  }
+  .input--search input:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+  .input--search input:focus {
+    border: 1px solid #50b83c;
+    outline: none;
+  }
+  .danger {
+    border: 1px solid #e61d1d;
+  }
+  .danger-message{
+    font-size: 12px;
+    color: #e61d1d;
+  }
+  .box__input--icon{
+      position: relative;
+  }
+  .box__select--icon{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+  .icon-search{
+      background: url("/assets/img/Sprites.64af8f61.svg") no-repeat -316px -147px ;
+       height: 17px;
+       width: 17px;
+       position: absolute;
+       top:10px;
+       left:12px;
+  }
+  .success{
+    border: 1px solid #50B83C;
+  }
+  .input--search{
+    position: relative;
+    height: 36px;
+    width: 100%;
+  }
+  #check{
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    margin: 16px 12px;
+    border: none;
+    outline: none;
+}
+.form--filter input{
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  width: 168px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+
+.form--filter #check{
+  margin: 0px 12px 0px 0px;
+}
+input:focus{
+  border: 1px solid #e6e6e6;
+  outline: none;
+}
+.input--infomation{
+  padding: 0px 16px 0px 0px;
+}

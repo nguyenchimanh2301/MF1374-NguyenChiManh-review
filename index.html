@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- this is navbar -->
+  <div class="navbar">
+    <div class="sidebar__icon">
+      <div class="icon--menu"></div>
+      <div class="icon--logo">
+        <img src="/assets/img/Logo_Module_TiengViet_White.66947422.svg" alt="">
+      </div>
+    </div>
+    <div class="navbar__form--tool">
+      <div class="navbar__icon">
+        <div class="icon--navbar"></div>
+        <div class="name--company">CÔNG TY CỔ PHẦN MISA</div>
+      </div>
+      <div class="navbar--name"></div>
+      <div class="navbar__input"></div>
+      <div class="navbar__icon--user">
+        <div class="icon--bell"></div>
+        <div class="icon--user"></div>
+        <div class="name--user">Nguyễn Chí Mạnh</div>
+      </div>
+    </div>
+  </div>
+  <!-- end navbar -->
+  <!-- this is sidebar -->
+  <div class="div layout--container">
+    <div class="sidebar">
+      <div class="list--item">
+        <div class="item">
+            <div class="icon--item icon--home"></div>
+            <div><p>Trang chủ</p></div>
+        </div>
+        <div class="item">
+          <div class="icon--item icon--report"></div>
+          <p> Báo cáo</p>
+        </div>
+        <div class="item">
+          <div class="icon--item icon--customer"></div>
+          <p>Khách hàng</p>
+        </div>
+        <div class="item">
+          <div class="icon--item icon--setting"></div>
+          <p>Cài đặt</p>
+        </div>
+      </div>
+      <div class="btn--sidebar-footer">
+       <div id="btn--hide-sidebar">
+        <div id="previous" onclick="collapseSidebar()">
+        </div>
+        <p> Thu gọn</p>
+       </div>
+       <div id="btn--show-sidebar">
+        <div  id="sidebar__icon--show" onclick="openSidebar()">    
+        </div>
+        <p> Mở rộng</p>
+       </div>
+      </div>
+    </div>
+    <!-- end sidebar -->
+    <div class="container">
+      <div class="content">
+        <div class="feature__button">
+          <div class="title">
+            <div style="position: relative;">
+              <h2>Quản lý khách hàng</h2>
+            </div>
+          </div>
+          <div class="btn--feature">
+            <button id="btn-add" class="button btn-main" onclick="showForm()">
+              Thêm mới
+              <div class="icon--adduser"></div>
+            </button>
+          </div>
+        </div>
+        <div class="table">
+          <div class="main--content">
+            <div style="background-color: #ffffff;">
+              <div class="feature">
+                <div class="feature__box">
+                  <div class="box__input--icon">
+                    <div class="item--select">
+                      <div>
+                        <div>Đã chọn<span id="count"></span> </div>
+                        <div><span id="clear">Bỏ chọn</span> </div>
+                        <div class="icon--close"></div>
+                      </div>
+                      <button class="button btn--delete">Xóa tất cả<i class="icon--trash"></i></button>
+                    </div>
+                  </div>
+                  <div class="box__select--icon">
+                    <div style="position: relative;">
+                    </div>
+                    <button>
+                      <div class="icon--filter"></div>
+                    </button>
+                    <button>
+                      <div class="icon--reload"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- start table data -->
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px">
+                      <input id="check" type="checkbox" />
+                    </th>
+                    <th>Mã khách hàng</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Công ty</th>
+                    <th >Dư nợ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+                <!-- <tbody>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                  <tr>
+                    <td><input id="check" type="checkbox" /></td>
+                    <td>Kh1011191</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>23/01/2001</td>
+                    <td>MISA</td>
+                    <td>492.442.8120</td>
+                  </tr>
+                </tbody> -->
+                <!-- end table -->
+                <!-- this is footer -->
+              
+              </table>
+            </div>
+          </div>
+          <div class="footer">
+            <div style="font-weight: 600;">Tổng: 100</div>
+            <div class="paging">
+              <span>Số bản ghi/trang</span>
+              <span><select name="" id="">
+                  <option value="">10</option>
+                </select></span>
+              <div>
+                <div id="previous"></div>
+                <div id="next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+      </div>
+    </div>
+
+  </div>
+  <!-- this is form -->
+  <div class="dark--screen">
+    <div class="form">
+      <div class="form--content">
+        <div class="form--title">
+          <h3>Thông tin khách hàng</h3>
+          <div class="icon--close-popup"onclick="closeForm()"></div>
+        </div>
+        <div class="form--input">
+          <div class="form__input--left">
+            <div style="display: flex; justify-content: space-between">
+              <label id="label" for="">Mã khách hàng<span class="text--required">*<span></span>
+                  <input type="text" id="empcode" />
+              </label>
+              <label id="label" for="">Họ và tên<span class="text--required">*<span></span>
+                  <input type="text" id="name" />
+              </label>
+            </div>
+            <label id="label" for="">Số điện thoại
+              <input type="text" id="phoneNumber"/>
+            </label>
+            <label id="label" for="">Email
+              <input type="text" id="email"/>
+            </label>
+          </div>
+          <div class="form__input--right">
+            <div>
+              <label id="label" for="">Ngày sinh
+                <input type="date" id="selectedDate"/>
+              </label>
+              <label id="label" for="">Giới tính
+                <div class="box__input--radio">
+                  <label id="gender"  for=""><input name="gender" type="radio" />Nam</label>
+                  <label id="gender" for=""><input  name="gender" type="radio" />Nữ</label>
+                  <label id="gender" for=""><input  name="gender" type="radio" />Khác</label>
+                </div>
+              </label>
+            </div>
+            <div style="
+                display: flex;
+                width: 550px;
+                justify-content: space-between;
+              ">
+              <label id="label" for="">Số CMTND
+                <div class="tooltip">Số chứng minh thư nhân dân</div>
+                <input type="text" id="idCard" />
+              </label>
+              <label id="label" for="">Ngày cấp
+                <input type="date" />
+              </label>
+            </div>
+            <label id="label" for="">Nơi cấp
+              <input type="text" style="width: 546px;" />
+            </label>
+          </div>
+        </div>
+        <div class="form__input--under">
+          <label id="label" for="">Số tiền nợ
+            <input type="text" style="width: 260px;" id="DebitAmount"/>
+          </label>
+          <label id="label" for="">Công ty
+            <input type="text" id="company"/>
+          </label>
+          <label id="label" for="">Địa chỉ
+            <input type="text" id="address"/>
+          </label>
+        </div>
+        <div class="form--footer">
+          <button class="button btn--cancel" onclick="closeForm()">Hủy</button>
+          <button class="button btn-main" onclick="showDialog()">Cất</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end form -->
+  <!-- this is dialog-message -->
+  <div class="dialog--background">
+    <div class="dialog">
+        <div class="dialog--title">
+            <h3>Bạn có chắc muốn xóa</h3>
+            <div class="toast--btn"></div>
+        </div>
+       <div class="dialog--content">
+        <div class="toast__icon icon--question"></div>
+        <div class="toast--content">Bạn có chắc chắn muốn thêm?</div>
+       </div>
+       <div class="dialog__btn">
+        <button class="button btn--cancel" id="closedialog">Hủy</button>
+        <button class="button btn-main" onclick="addData()">Đồng Ý</button>
+       </div>
+    </div> 
+</div>
+   <!-- end-dialog -->
+
+   <!-- this is toast message -->
+   <div class="toast--container">
+   
+   
+   </div>
+
+</div>
+   <!-- end toast  -->
+
+   <!-- loader -->
+   <div class="load--background">
+   <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+   </div>
+  <script src="../js/main.js"></script>
+  <script src="./js/resource.js"></script>
+
+
+</body>
+
+</html>

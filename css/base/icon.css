@@ -1,0 +1,163 @@
+
+.icon--menu{
+    background:  var(--image)  -1157px -32px;
+	width: 20px;
+	height:20px;
+	margin-left: 16px;
+}
+.icon--logo img{
+	/* background:  var(--image)  -1157px -32px; */
+	width: 128px;
+	height:64px;
+	margin-left: 16px;
+}
+
+.icon--item{
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	margin: 0px 15px 0px 15px;
+}
+.icon--home{
+	background:  var(--image)  -33px -1587px;
+}
+.icon--report{
+	background:  var(--image)  -253px -1667px;
+}
+.icon--customer{
+	background:  var(--image)  -593px -1588px;
+}
+.icon--setting{
+	background:  var(--image)  -91px -201px;
+}
+
+.navbar__icon--user{
+	height: 32px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 250px;
+}
+.box__input-icon{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: flex-end;
+}
+.box__input-icon div{
+	margin-bottom: 20px;
+}
+.icon--dort{
+	background:  var(--image)  -1510px -481px;
+	width: 10px;
+	height: 2px;
+}
+.box__select--icon{
+	display: flex;
+	justify-content: space-evenly;
+	justify-items: center;
+	width: 80px;
+}
+.box__select--icon input{
+	width: 260px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+}
+.icon--bell{
+	background:  var(--image)  -789px -28px;
+	width: 20px;
+	height: 25px;
+	padding: 2px;
+}
+.icon--user{
+	background:  var(--image)  -352px -894px;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+}
+.icon--reload{
+	background:  var(--image)  -424px -201px;
+	height: 24px;
+	width: 24px;
+}
+.icon--navbar{
+	background:  var(--image)  -847px -32px;
+	height: 24px;
+	width: 24px;
+    margin-left: 24px;
+}
+.icon--filter{
+	background:  var(--image)  -705px -258px;
+	height: 20px;
+	width: 20px;
+	padding: 2px;
+}
+.icon--reload{
+	background: var(--image) no-repeat -1328px -312px;
+	height: 16px;
+	width: 16px;
+}
+.icon-drop{
+	background: var(--image) -467px -414px;
+	height: 15px;
+	width: 11px;
+	padding: 2px;
+	position: absolute;
+	right: 6px;
+	top: 16px;
+
+}
+.icon--trash{
+	background: var(--image) -464px -313px;
+	height: 15px;
+	width: 15px;
+	padding: 2px;
+	position: absolute;
+	left: 6px;
+	color: red;
+}
+#previous{
+	background: var(--image) -36px -361px;
+	height:7px;
+	width: 14px;
+	padding: 5px;
+
+}
+#sidebar__icon--show{
+	background: var(--image) -84px -409px;
+	height: 14px;
+	width: 14px;
+}
+#next{
+	background: var(--image) -1085px -361px;
+	height: 14px;
+	width: 14px;
+	padding: 5px;
+}
+.icon--close{
+	background: var(--image) -83px -316px;
+	height: 9px;
+	width: 9px;
+}
+.icon--close-popup{
+	background: var(--image) -147px -147px;
+	height:18px;
+	width: 18px;
+}
+.icon--close-popup:hover{
+	background-color: #e6e6e6;
+}
+
+.icon--adduser{
+	background: var(--image) -636px -1588px;
+	height: 19px;
+	width: 19px;
+}
+.btn-main div{
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	font-size: 16px;
+	font-weight: 700px;
+}

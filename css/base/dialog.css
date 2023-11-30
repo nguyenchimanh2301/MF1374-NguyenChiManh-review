@@ -1,0 +1,52 @@
+.dialog--background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    top: 0px;
+    display: none;
+    animation: fadein 1s ease-in both;
+
+} 
+  @keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      background-color:#E0E0E0;
+      opacity: 0.8;
+
+    }
+  }
+.dialog--title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 24px 0px 24px;
+}
+.dialog--title h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.dialog{
+    height: 173px;
+    width: 416px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 48px auto 56px;
+    opacity: 2;
+}
+.dialog--content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 24px 0px 24px;
+
+}
+.dialog__btn{
+    display: flex;
+    height: 36px;
+    justify-content: flex-end;
+}

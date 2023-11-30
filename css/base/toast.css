@@ -1,0 +1,54 @@
+.toast--container{
+ display: grid;
+ row-gap: 24px;
+ height: 56px;
+ width: 450px;
+  background-color: #E6E6E6;
+  position: absolute;
+  top: 10px;
+  right:10px;
+  z-index: 20;
+  display: none;
+}
+.form--toast{
+    background-color: #ffffff;
+    width: 450px;
+    border-radius: 4px;
+    height: 56px;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 48px auto 48px;
+    place-items:center;
+    border: none;
+    box-shadow: 2px 3px 3px 3px #ffffff;
+}
+.toast__icon.icon--question{
+    background:  var(--image)  -89px -145px;
+	width: 22px;
+	height:22px;
+}
+.toast__icon.icon--danger{
+    background:  var(--image)  -762px -146px;
+	width: 20px;
+	height:20px;
+}
+.toast__icon.icon--warning{
+    background:  var(--image) -817px -145px;
+	width: 22px;
+	height:22px;
+}
+.toast__icon.icon--success{
+    background:  var(--image) -1602px -258px;
+	width: 22px;
+	height:22px;
+}
+.toast__icon.icon--info{
+    background:  var(--image) -706px -146px;
+	width: 22px;
+	height:22px;
+}
+.toast--btn{
+    background:  var(--image) -147px -147px;
+	width: 22px;
+	height:22px;
+}
