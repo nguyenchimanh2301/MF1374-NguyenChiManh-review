@@ -90,21 +90,17 @@ getData();
         errorMessage.push("Ngày được chọn không được lớn hơn ngày hiện tại")
       }
       let obj = {
-          "createdBy": "string",
-          "modifiedBy": "string",
           "customerCode": customerCode,
-          "firstName": "string",
-          "lastName": "string",
           "fullName": customerName,
           "gender": 0,
-          "address": "string",
+          "address": address,
           "dateOfBirth":dateOfBirth,
           "email": email,
           "phoneNumber": phoneNumber,
           "customerGroupId": "4cf2dd43-5f4b-71b6-e212-ebbbcf065d1c",
-          "debitAmount": 0,
+          "debitAmount": DebitAmount,
           "memberCardCode": "string",
-          "companyName": "string",
+          "companyName": companyName,
         }
         // "customerCode": ,
         // "fullName": ,
@@ -132,7 +128,7 @@ getData();
       console.log(obj);
       let toast = document.querySelector('.toast--container');
       let textMessage = ` <div class="form--toast">
-      <div class="toast__icon icon--warning"></div>
+      <div class="toast__icon icon--success"></div>
       <div class="toast--content">Thành công</div>
       <div class="toast--btn"></div>
        </div>`;
@@ -158,9 +154,13 @@ getData();
 
        })
        toast.style.display = 'block';
+       let dialog = document.querySelector('.dialog--background');
+       dialog.style.display = 'none';
        setTimeout(() => {
         toast.style.display = 'none';
+       
      }, 4000)
+
       }
        
  }
